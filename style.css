@@ -9,7 +9,12 @@
 }
 
 #search {
-    background-color: bisque;
+    background-color:rgb(223, 222, 222);
+
+}
+.weatherBtn {
+    background-color: rgb(56, 56, 255);
+    color: white;
 }
     
 #cityView {
@@ -17,11 +22,26 @@
     border-width: 1px ; 
     margin: 20px;
     padding: 20px;
+    font-size: large;
 
 }
 
 #search {
     margin: 20px;
     padding: 20px;
+    font-size: large;
+
 
 }
+
+span {
+    content: "\2109";
+  }
+
+  .eachDay {
+      background-color: rgb(56, 56, 255);
+      border-width:1px ;
+      color: white;
+      margin: 10px;
+      padding: 20px;
+  }
