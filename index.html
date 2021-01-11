@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 </head>
 
@@ -19,41 +20,106 @@
             <div class="col-3">
 
                 <div id="search"> Search for a City:
-                    
-                    <input type="text" id="searchInput"/>
-                    
-                    
-                    <button class="weatherBtn" value="weatherSearch">search</button>
-            
-                </div>
 
-                <div class="weatherView"></div>
-
-            </div>
-            <div class="col">
-                <div id="cityView" class="container">
-                    <div class="header1">
-                        <div id="icon"><img id="wicon" src="" alt="Weather icon"></div>    
+                    <div class="input-group mb-3" id="seachArea">
+                        <input type="text" class="form-control searchInput " placeholder="Seach City">
+                        <div class="input-group-append">
+                            <button class="input-group-text weatherBtn" value="weatherSearch">search</button>
+                        </div>
                     </div>
-                    <div class="temperature"> Temperature: <span>&#8457;</span></div>  
-                    <div class="humidity"> Humidity:</div>  
-                      <div class="windspeed"> Windspeed:</div> 
-                      <div class="uv"> UV index:</div>       
-                </div>
 
-
-                <div id="dayForecast" class="container">
-                    <h1 class="forecast">5 Day Forecast: </h1>
-                   
 
                 </div>
 
+                <div class="city">
+                    Previous searched city:
+                    <div class="previousCity"> </div>
 
 
-
+                </div>
 
             </div>
+
+
+
+
+            <div id="cityView" class="container col">
+
+                <h1 class="header1"></h1>
+                <div class="temperature"> Temperature: <span>&#8457;</span></div>
+                <div class="humidity"> Humidity:</div>
+                <div class="windspeed"> Windspeed:</div>
+                <div class="uv"> UV index:</div>
+            </div>
+
+            <div class="row"></div>
+            <div class="col-3"></div>
+
+
+
+
+
+<!-- 
+            <div class="row"> 5 Day Forecast:</div> -->
+<!-- 
+                <div id="cityView" class="container col-sm">
+                    <h1 class="header1 col"> </h1>
+                    <div class="temperature"> Temperature: </div>
+                    <div class="humidity"> Humidity:</div>
+
+                </div>
+
+
+                <div id="cityView" class="container col-sm">
+                    <h1 class="header1 col"> </h1>
+                    <div class="temperature"> Temperature: </div>
+                    <div class="humidity"> Humidity:</div>
+
+                </div>
+
+
+                <div id="cityView" class="container col-sm">
+                    <h1 class="header1 col"> </h1>
+                    <div class="temperature"> Temperature: </div>
+                    <div class="humidity"> Humidity:</div>
+
+                </div>
+
+
+                <div id="cityView" class="container col-sm">
+                    <h1 class="header1 col"> </h1>
+                    <div class="temperature"> Temperature:</div>
+                    <div class="humidity"> Humidity:</div>
+
+                </div>
+
+
+                <div id="cityView" class="container col-sm">
+                    <h1 class="header1 col"> </h1>
+                    <div class="temperature"> Temperature:</div>
+                    <div class="humidity"> Humidity:</div>
+
+                </div> -->
+
+
+            
+
         </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    </div>
+
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="main.js"></script>
